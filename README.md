@@ -2,31 +2,31 @@
 # What is Feature Scaling?
 Feature scaling is a data pre processing step, that improves (significantly) the performance of some 
 machine learning algorithms.
- It makes sure that the features involved in the computation are on the similar scale. 
-- This implies that the features involved should take similar ranges of values. 
- It prevents any one feature having high range values, to dominate the results.
+* It makes sure that the features involved in the computation are on the similar scale. 
+* This implies that the features involved should take similar ranges of values. 
+* It prevents any one feature having high range values, to dominate the results.
 
 # Machine learning Algorithms that requires Feature Scaling:
-Feature scaling is a data pre processing step, that improves (significantly) the performance of some 
-machine learning algorithms.
- It makes sure that the features involved in the computation are on the similar scale. 
-- This implies that the features involved should take similar ranges of values. 
- It prevents any one feature having high range values, to dominate the results.
+Machine learning algorithms, where feature scaling is advantageous include:
+* linear regression, logistic regression, neural network, etc. that use gradient descent optimization,
+* Distance algorithms like K nearest neighbors (KNN), K-means clustering, and support vector machine 
+(SVM). 
+* Tree-based algorithms like decision trees, random forest, xgboost, etc., on the other hand, are fairly 
+insensitive to the scale of the features.
 
 # Feature Scaling Techniques:
 Two common techniques are Normalization and Standardization.
 
 # Normalization :
- Also known as min-max scaling or min-max normalization.
- Scales down the values of the features between 0 and 1. 
- The general formula for normalization is given as:
-𝑥𝑛𝑜𝑟𝑚 =𝑥 − 𝑥𝑚𝑖𝑛 / 𝑥𝑚𝑎𝑥 − 𝑥𝑚𝑖𝑛
- xmax and 𝑥𝑚𝑖𝑛 are the maximum and the minimum values of the feature respectively.
- When the value of 𝑥 is the minimum value in the column, the numerator will be 0, and hence 𝑥𝑛𝑜𝑟𝑚 is 
+Also known as min-max scaling or min-max normalization.
+* Scales down the values of the features between 0 and 1. 
+* The general formula for normalization is given as: 𝑥𝑛𝑜𝑟𝑚 =𝑥 − 𝑥𝑚𝑖𝑛 / 𝑥𝑚𝑎𝑥 − 𝑥𝑚𝑖𝑛
+* xmax and 𝑥𝑚𝑖𝑛 are the maximum and the minimum values of the feature respectively.
+* When the value of 𝑥 is the minimum value in the column, the numerator will be 0, and hence 𝑥𝑛𝑜𝑟𝑚 is 
 0.
- On the other hand, when the value of 𝑥 is the maximum value in the column, the numerator is equal to 
+* On the other hand, when the value of 𝑥 is the maximum value in the column, the numerator is equal to 
 the denominator and thus the value of 𝑥𝑛𝑜𝑟𝑚 is 1.
- If the value of 𝑥 is between the minimum and the maximum value, then the value of 𝑥𝑛𝑜𝑟𝑚 is between 
+* If the value of 𝑥 is between the minimum and the maximum value, then the value of 𝑥𝑛𝑜𝑟𝑚 is between 
 0 and 1.
 
 # Standardization :
